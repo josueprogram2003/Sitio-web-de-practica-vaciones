@@ -14,48 +14,110 @@
   <body>
     <header class="main-header">
       <div class="container container--flex">
-        <div class="main-header__container">
+        <!-- TODO: CABECERA DE LA WEB -->
+        <div class="main-header__container main-header__container--inverse">
           <h1 class="main-header__title">GOGGLES</h1>
-          <i class="fas fa-bars icon-menu" id="btn-menu"></i>
-          <nav class="main-nav" id="main-nav">
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">About</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Features</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Shop</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="main-header__container">
-          <span class="main-header__txt">Need Help</span>
           <p class="main-header__txt">
-            <i class="fas fa-phone"></i>Call 123456789
+            <i class="fas fa-phone icon-phone"></i>Call 123456789
           </p>
+          <span class="main-header__txt">Need Help</span>
         </div>
-        <div class="main-header__container">
-          <i class="fas fa-user"></i>
-          <a href="#" class="main-header__btn"
-            >My cart <i class="fas fa-shopping-cart"></i
-          ></a>
-          <input
-            type="search"
-            class="main-header__input"
-            placeholder="Buscar Productos"
-          />
-          <i class="fas fa-search"></i>
+        <div class="main-header__container main-header__container--column">
+          <!-- TODO: DETAILS -->
+          <div class="details">
+            <i class="fas fa-user details__icon-user"></i>
+            <a href="#" class="main-header__btn"
+              >My cart <i class="fas fa-shopping-cart"></i
+            ></a>
+          </div>
+          <!-- TODO: SEARCH - MENU -->
+          <div class="main-options">
+            <i class="fas fa-bars icon-menu" id="btn-menu"></i>
+            <nav class="main-nav" id="main-nav">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Features</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Shop</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <input
+              type="search"
+              class="main-header__input"
+              placeholder="Buscar Productos"
+            />
+            <i class="fas fa-search main-options__icon-search"></i>
+          </div>
         </div>
       </div>
     </header>
+    <!-- ? PARTE PRINCIPAL DE LA PAGINA -->
+    <main class="main">
+      <!-- TODO:  Slider Menu    Section-1-->
+      <section class="section-one">
+        <div class="container-slider" id="slider">
+          <article class="slider-item">
+            <header class="slider-header">
+              <h2 class="slider-header__title">Imagen 1</h2>
+              <p class="slider-header__desc">Imagen 1 descripcion</p>
+              <a href="#" class="slider-header__link">Ingresar a la foto</a>
+            </header>
+            <div class="container-img">
+              <img src="img/imagen1.jpg" alt="Imagen 1" />
+            </div>
+          </article>
+          <article class="slider-item">
+            <header class="slider-header">
+              <h2 class="slider-header__title">Imagen 2</h2>
+              <p class="slider-header__desc">Imagen 2 descripcion</p>
+              <a href="#" class="slider-header__link">Ingresar a la foto</a>
+            </header>
+            <div class="container-img">
+              <img src="img/imagen2.jpg" alt="Imagen 2" />
+            </div>
+          </article>
+          <article class="slider-item">
+            <header class="slider-header">
+              <h2 class="slider-header__title">Imagen 3</h2>
+              <p class="slider-header__desc">Imagen 3 descripcion</p>
+              <a href="#" class="slider-header__link">Ingresar a la foto</a>
+            </header>
+            <div class="container-img">
+              <img src="img/imagen3.jpg" alt="Imagen 3" />
+            </div>
+          </article>
+          <article class="slider-item">
+            <header class="slider-header">
+              <h2 class="slider-header__title">Imagen 4</h2>
+              <p class="slider-header__desc">Imagen 4 descripcion</p>
+              <a href="#" class="slider-header__link">Ingresar a la foto</a>
+            </header>
+            <div class="container-img">
+              <img src="img/imagen4.jpg" alt="Imagen 4" />
+            </div>
+          </article>
+        </div>
+        <div class="btn-slider btn-slider--left" id="btn-left">
+          <i class="fas fa-chevron-left btn-slider__icon"></i>
+        </div>
+        <div class="btn-slider btn-slider--right" id="btn-right">
+          <i class="fas fa-chevron-right btn-slider__icon"></i>
+        </div>
+      </section>
+
+      <!-- TODO: SECTION IMG -->
+    </main>
+    <script src="js/slider.js"></script>
   </body>
 </html>
