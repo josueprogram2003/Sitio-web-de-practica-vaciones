@@ -16,51 +16,56 @@
     <header class="main-header">
       <div class="container container--flex">
         <!-- TODO: CABECERA DE LA WEB -->
-        <div class="main-header__container main-header__container--inverse">
-          <h1 class="main-header__title">GOGGLES</h1>
-          <p class="main-header__txt">
-            <i class="fas fa-phone icon-phone"></i>Call 123456789
-          </p>
-          <span class="main-header__txt">Need Help</span>
-        </div>
-        <div class="main-header__container main-header__container--column">
-          <!-- TODO: DETAILS -->
-          <div class="details">
-            <i class="fas fa-user details__icon-user"></i>
-            <a href="#" class="main-header__btn"
-              >My cart <i class="fas fa-shopping-cart"></i
-            ></a>
+        <div class="main-desc">
+          <div class="main-header__container main-header__container--inverse">
+            <h1 class="main-header__title">GOGGLES</h1>
+            <div class="texts">
+              <p class="main-header__txt">
+                <i class="fas fa-phone icon-phone"></i>Call 123456789
+              </p>
+              <span class="main-header__txt">Need Help</span>
+            </div>
           </div>
-          <!-- TODO: SEARCH - MENU -->
-          <div class="main-options">
-            <input
-              type="search"
-              class="main-header__input"
-              placeholder="Buscar Productos"
-            />
-            <i class="fas fa-search main-options__icon-search"></i>
-            <i class="fas fa-bars icon-menu" id="btn-menu"></i>
+          <div class="main-header__container main-header__container--column">
+            <!-- TODO: DETAILS -->
+            <div class="details">
+              <i class="fas fa-user details__icon-user"></i>
+              <a href="#" class="main-header__btn"
+                >My cart <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
           </div>
-          <nav class="main-nav ocultar" id="main-nav">
-            <ul class="menu">
-              <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">About</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Features</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Shop</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Contact</a>
-              </li>
-            </ul>
-          </nav>
         </div>
+        <!-- TODO: SEARCH - MENU -->
+        <div class="main-options">
+          <input
+            type="search"
+            class="main-header__input"
+            placeholder="Buscar Productos"
+          />
+          <i class="fas fa-search main-options__icon-search"></i>
+          <i class="fas fa-bars icon-menu" id="btn-menu"></i>
+        </div>
+        <nav class="main-nav" id="main-nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Features</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Shop</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </ul>
+          <i class="fas fa-search icon"></i>
+        </nav>
       </div>
     </header>
     <!-- ? PARTE PRINCIPAL DE LA PAGINA -->
@@ -151,6 +156,38 @@
             <div class="product__description">
               <h3 class="product__title">Kanneth Cole</h3>
               <span class="product__price">$575.00</span>
+            </div>
+            <i class="fas fa-cart-plus product__icon"></i>
+          </div>
+          <div class="product">
+            <img src="img/lente2.jpg" alt="Lente2" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">Kenneth Cole</h3>
+              <span class="product__price">$587.00</span>
+            </div>
+            <i class="fas fa-cart-plus product__icon"></i>
+          </div>
+          <div class="product">
+            <img src="img/lente2.jpg" alt="Lente3" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">Facerith</h3>
+              <span class="product__price">$325.00</span>
+            </div>
+            <i class="fas fa-cart-plus product__icon"></i>
+          </div>
+          <div class="product">
+            <img src="img/lente1.jpg" alt="Lente4" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">Kanneth Cole</h3>
+              <span class="product__price">$575.00</span>
+            </div>
+            <i class="fas fa-cart-plus product__icon"></i>
+          </div>
+          <div class="product">
+            <img src="img/lente2.jpg" alt="Lente3" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">Facerith</h3>
+              <span class="product__price">$325.00</span>
             </div>
             <i class="fas fa-cart-plus product__icon"></i>
           </div>
@@ -248,9 +285,11 @@
           placeholder="Enter your email"
         />
       </div>
-      <p class="copy">
-        © 2021 Goggles. All Rights Reserved | Design by W3Layouts
-      </p>
+      <div class="footer__section footer__section--botton">
+        <p class="copy">
+          © 2021 Goggles. All Rights Reserved | Design by W3Layouts
+        </p>
+      </div>
     </footer>
     <script src="js/slider.js"></script>
     <script src="./js/menu.js"></script>
